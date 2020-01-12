@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yahtzee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dices">
+            <ul>
+                <li data-play="off" data-value=""><img src="" alt="" id="dice1" data-index=""></li>
+                <li data-play="off" data-value=""><img src="" alt="" id="dice2" data-index=""></li>
+                <li data-play="off" data-value=""><img src="" alt="" id="dice3" data-index=""></li>
+                <li data-play="off" data-value=""><img src="" alt="" id="dice4" data-index=""></li>
+                <li data-play="off" data-value=""><img src="" alt="" id="dice5" data-index=""></li>
+            </ul>
+        </div>
+        <div class="scorecard">
+            <table id="scoretable">
+                <tr>
+                    <td>1's</td>
+                    <td data-id="ones">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2's</td>
+                    <td data-id="twos">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3's</td>
+                    <td data-id="threes">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4's</td>
+                    <td data-id="fours">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5's</td>
+                    <td data-id="fives">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>6's</td>
+                    <td data-id="sixes">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3 of a kind</td>
+                    <td data-id="three-of-a-kind">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4 of a kind</td>
+                    <td data-id="four-of-a-kind">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Full house</td>
+                    <td data-id="full-house">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Sm straight</td>
+                    <td data-id="small-straight">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lg straight</td>
+                    <td data-id="large-straight">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yahtzee</td>
+                    <td data-id="yahtzee">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chance</td>
+                    <td data-id="chance">
+                        <span></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td id="total-score" class="active"></td>
+                </tr>
+            </table>
+            <button id="roll" class="roll-btn">Roll</button>
+            <button id="new-game" class="new-btn">New Game</button>
+        </div>
+    </div>
+    <!-- Javascript Files Required -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

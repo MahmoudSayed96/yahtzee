@@ -1,0 +1,113 @@
+
+/* General Style */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 50px auto;
+}
+
+.dices {
+    margin-bottom: 30px;
+}
+
+.dices ul {
+    padding: 0;
+    margin: 0;
+    list-style:none;
+}
+
+.dices ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color:#afafff; 
+    border: 1px solid #afafff;
+    cursor: pointer; 
+}
+
+.dices ul li img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color:#afafff; 
+    border: 1px solid #afafff;
+    cursor: pointer; 
+}
+
+.scorecard{
+    position: relative;
+    width: 600px;
+}
+
+#scoretable tr td {
+    display: inline-block;
+    text-align: right;
+    width: 100px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+#scoretable tr td:last-of-type {
+    display: inline-block;
+    background-color: #afafff;
+    cursor: text;
+    text-align: center;
+    font-weight: bold;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: red;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#scoretable tr td:last-of-type span {
+    visibility: hidden;
+}
+
+#scoretable tr td.active {
+    color: black;
+    cursor: default;
+}
+
+#scoretable tr td#total-score {
+    color: black;
+    font-weight: bold;
+    cursor: default;
+}
+.scorecard .roll-btn {
+    position: absolute;
+    right: 200px;
+    top: 100px;
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.scorecard .new-btn {
+    position: absolute;
+    right: 170px;
+    bottom: 50px;
+    background-color: #afbfbf;
+    color: rgb(91, 0, 177);
+    border: none;
+    cursor: pointer;
+    width: 135px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
